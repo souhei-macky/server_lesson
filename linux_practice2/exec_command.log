@@ -1,0 +1,136 @@
+    1  clear
+    2  exit
+    3  sudo yum -y groupinstall "development tools"
+    4  sudo yum -y install epel-release wget
+    5  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    6  sudo rpm -Uvh remi-release-7.rpm
+    7  sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    8  php -v
+    9  ls
+   10  cd
+   11  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   12  php composer-setup.php
+   13  php -r "unlink('composer-setup.php');"
+   14  sudo mv composer.phar /usr/local/bin/composer
+   15  composer -v
+   16  clear
+   17  ls /
+   18  ls /usr
+   19  pwd
+   20  cd /vagrant
+   21  pwd
+   22  cd usr
+   23  cd /usr
+   24  pwd
+   25  cd ~
+   26  ls
+   27  ls /
+   28  cd /vagrant
+   29  ls /
+   30  ls
+   31  mkdir server_lesson && cd server_lesson
+   32  git init
+   33  touch first.txt
+   34  cd vagrant
+   35  cd /vagrant
+   36  clear
+   37  mkdir server_lesson/linux_practice/public
+   38  mkdir -p server_lesson/linux_practice/public
+   39  ls server_lesson server_lesson/linux_practice
+   40  ls
+   41  touch server_lesson/linux_practice/public/index.php
+   42  ls server_lesson/linux_practice/public
+   43  cd /vagrant/server_lesson && ls
+   44  cd /vagrant/server_lesson/linux_practice/public
+   45  cp index.php index_bk.php
+   46  ls
+   47  cd /vagrant/server_lesson/linux_practice
+   48  ls
+   49  cp -r public tmp
+   50  ls
+   51  ls ./ public tmp
+   52  clear
+   53  cd /vagrant
+   54  mv server_lesson/linux_practice server_lesson/linux_practice1
+   55  mkdir linux_practice2 linux_practice3
+   56  mv ./linux_practice2 ./server_lesson
+   57  cd /vagrant/server_lesson/linux_practice1/tmp/
+   58  ls
+   59  rm *_bk.php
+   60  ls
+   61  cd /vagrant
+   62  rm server_lesson/first.txt
+   63  rm -r linux_practice3
+   64  ls server_lesson
+   65  cd /vagrant/server_lesson
+   66  echo '# サーバレッスン' > README.md
+   67  echo 'Linuxプラクティス' >> README.md
+   68  echo '-----------------' >> README.md
+   69  cat README.me
+   70  cat README.md
+   71  cd /vagrant/server_lesson
+   72  vi README.md
+   73  git status
+   74  git branch
+   75  git add README.md
+   76  git add linux_practice1/
+   77  git status
+   78  git commit -m 'practice1'
+   79  git log
+   80  git status
+   81  git remote -v
+   82  git remote add origin https://github.com/souhei-macky/server_lesson.git
+   83  git remote -v
+   84  git push origin master
+   85  git remote -v
+   86  git status
+   87  git push origin master
+   88  git push -u origin master
+   89  git push origin master
+   90  git config user.name
+   91  git push origin master
+   92  git remote -v
+   93  git push origin master
+   94  ls
+   95  cd linux_practice2
+   96  ls
+   97  mkdir documents
+   98  ls
+   99  cd documents
+  100  pwd
+  101  touch gizumo{01..50}.md
+  102  ls
+  103  pwd
+  104  cd /vagrant/server_lesson/linux_practice2/
+  105  mkdir trash
+  106  cd trash
+  107  mv gizumo{20..40}.md /trash
+  108  mv gizumo{20..40}.md  ./trash
+  109  pwd
+  110  mv gizumo{20..40}.md  ./vagrant/server_lesson/linux_practice2/trash
+  111  cd
+  112  mv ./vagrant/server_lesson/linux_practice2/documents/gizumo{20..40}.md  ./vagrant/server_lesson/linux_practice2/trash
+  113  mv gizumo20.md /trash
+  114  mv /vagrant/server_lesson/linux_practice2/documents/gizumo20.md /vagrant/server_lesson/linux_practice2/trash/
+  115  mv /vagrant/server_lesson/linux_practice2/documents/gizumo21.md /vagrant/server_lesson/linux_practice2/trash
+  116  mv /vagrant/server_lesson/linux_practice2/documents/gizumo1.md /vagrant/server_lesson/linux_practice2/trash/
+  117  mv /vagrant/server_lesson/linux_practice2/documents/gizumo{22..40}.md /vagrant/server_lesson/linux_practice2/trash/
+  118  touch /vagrant/server_lesson/linux_practice2/.gitignore
+  119  cd /vagrant/server_lesson/
+  120  cd linux_pracitce2
+  121  ls
+  122  cd linux_practice2
+  123  ls
+  124  cd trash
+  125  ks
+  126  ls
+  127  vi trash
+  128  cd
+  129  cd /vagrant/server_lesson/linux_practice2
+  130  ls
+  131  vi .gitignore
+  132  git status
+  133  cd
+  134  histroy 300
+  135  history 300
+
